@@ -1,0 +1,46 @@
+﻿<Window x:Class="DeformationUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeformationUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <Grid Name="MainGrid" Height="Auto" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Name="OriginalImgBtn" Click="OriginalImgBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Name="OriginalImg" />
+        </Button>
+        <Canvas Grid.Row="0" Grid.Column="0" Name="OriginalImgCanvas"/>
+
+        <Button Grid.Row="0" Grid.Column="1" Name="ReferenceImgBtn" Click="ReferenceImgBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Name="ReferenceImg" />
+        </Button>
+        <Canvas Grid.Row="0" Grid.Column="1" Name="ReferenceImgCanvas"/>
+
+        <Image Grid.Row="0" Grid.Column="2" Name="TargetImg" />
+
+        <Button Grid.Row="1" Grid.Column="0" Name="UndoOriginalBtn" Click="UndoOriginalBtn_Click">撤销</Button>
+        <Button Grid.Row="2" Grid.Column="0" Name="UploadOriginalBtn" Click="UploadOriginalBtn_Click">选择原图</Button>
+
+        <Button Grid.Row="1" Grid.Column="1" Name="UndoReferenceBtn" Click="UndoReferenceBtn_Click">撤销</Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="UploadReferenceBtn" Click="UploadReferenceBtn_Click">选择模板</Button>
+
+
+        <Button Grid.Row="1" Grid.RowSpan="2"  Grid.Column="2" Name="RunBtn" Click="Button_Click">转换</Button>
+        
+
+
+    </Grid>
+</Window>

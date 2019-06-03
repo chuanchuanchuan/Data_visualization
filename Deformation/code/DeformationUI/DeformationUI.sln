@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeformationUI", "DeformationUI\DeformationUI.csproj", "{DFE9E9AF-8E0A-4549-98D3-412BB051903C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFE9E9AF-8E0A-4549-98D3-412BB051903C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE9E9AF-8E0A-4549-98D3-412BB051903C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE9E9AF-8E0A-4549-98D3-412BB051903C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE9E9AF-8E0A-4549-98D3-412BB051903C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FFE0C8C-BB87-4B9D-BA9B-6B0BC3C31164}
+	EndGlobalSection
+EndGlobal
