@@ -1,0 +1,9 @@
+
+.vscode/settings.json
+env
+out/*
+result/*
+*.pyc
+build/*
+dist/*
+*.spec
